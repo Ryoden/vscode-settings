@@ -1,0 +1,42 @@
+{
+  /*common*/
+  "editor.defaultFormatter": null,
+  "editor.detectIndentation": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "editor.renderWhitespace": "all",
+  "editor.rulers": [
+    88,
+    119,
+  ],
+  "editor.tabSize": 4,
+  "files.exclude": {
+    "**/.coverage": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.mypy_cache": true,
+    "**/.pytest_cache": true,
+    "**/.serverless": true,
+    "**/.terraform": true,
+    "**/.venv": true,
+    "**/__pycache__": true,
+    "**/node_modules": true,
+  },
+  "files.trimTrailingWhitespace": true,
+  "[json][jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.tabSize": 2,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+  },
+  "[markdown]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.markdownlint": "explicit",
+    },
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    "editor.fontFamily": "BIZ UDゴシック",
+    "files.trimTrailingWhitespace": false,
+  }
+}

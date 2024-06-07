@@ -1,0 +1,8 @@
+[*]
+charset = utf-8
+end_of_line = lf
+
+[*.bat]
+charset = Shift_JIS
+end_of_line = crlf
+
