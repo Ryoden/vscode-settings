@@ -1,0 +1,75 @@
+{
+  /*common*/
+  "editor.defaultFormatter": null,
+  "editor.detectIndentation": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "editor.renderWhitespace": "all",
+  "editor.rulers": [
+    88,
+    119,
+  ],
+  "editor.tabSize": 4,
+  "files.exclude": {
+    "**/.coverage": true,
+    "**/.mypy_cache": true,
+    "**/.pytest_cache": true,
+    "**/.venv": true,
+    "**/__pycache__": true,
+    "htmlcov": true,
+  },
+  "files.trimTrailingWhitespace": true,
+  /*pythonここから*/
+  "mypy-type-checker.args": [
+    //"--strict",
+    "--check-untyped-defs",
+    "--disallow-untyped-defs",
+    //"--disallow-any-expr", //有効にすると厳しすぎるためコメントアウト
+    //"--disallow-any-decorated", //staticmethod, classmethodなどの型を指定できないためコメントアウト
+    //"--disallow-any-explicit", //有効にすると厳しすぎるためコメントアウト
+    //"--disallow-any-generics", //dictが使えなくなるためコメントアウト
+    //"--disallow-subclassing-any",//factory_boyなどで使えなくなるためコメントアウト
+    "--disallow-untyped-calls",
+    "--ignore-missing-imports",
+    "--no-implicit-optional",
+    "--no-site-packages",
+    "--show-column-numbers",
+    "--warn-redundant-casts",
+    "--warn-unused-ignores",
+    //"--warn-return-any",
+  ],
+  "mypy-type-checker.ignorePatterns": [
+    //"conftest.py",
+  ],
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/src",
+    "${workspaceFolder}/tests",
+  ],
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+  "python.languageServer": "Pylance",
+  /*pythonここまで*/
+  "[json][jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.tabSize": 2,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+  },
+  "[markdown]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.markdownlint": "explicit",
+    },
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    "editor.fontFamily": "BIZ UDゴシック",
+    "files.trimTrailingWhitespace": false,
+  },
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": "explicit",
+      "source.organizeImports": "explicit",
+      "source.organizeImports.ruff": "explicit"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff",
+  }
+}
